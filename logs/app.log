@@ -1,0 +1,78 @@
+2025-09-17 11:01:06 INFO  [main] c.e.A.SpringFvuAppApplicationTests - Starting SpringFvuAppApplicationTests using Java 17.0.16 with PID 7048 (started by vshrama in C:\Users\vshrama\Spring-FVU_Utility_Original)
+2025-09-17 11:01:06 INFO  [main] c.e.A.SpringFvuAppApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2025-09-17 11:01:08 INFO  [main] c.e.A.SpringFvuAppApplicationTests - Started SpringFvuAppApplicationTests in 1.736 seconds (process running for 2.887)
+2025-09-17 11:02:26 INFO  [restartedMain] c.e.A.SpringFvuAppApplication - Starting SpringFvuAppApplication using Java 17.0.16 with PID 25592 (C:\Users\vshrama\Spring-FVU_Utility_Original\target\classes started by vshrama in C:\Users\vshrama\Spring-FVU_Utility_Original)
+2025-09-17 11:02:26 INFO  [restartedMain] c.e.A.SpringFvuAppApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-17 11:02:26 INFO  [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-09-17 11:02:26 INFO  [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-09-17 11:02:27 INFO  [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2025-09-17 11:02:27 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2025-09-17 11:02:27 INFO  [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-17 11:02:27 INFO  [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-09-17 11:02:27 INFO  [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-09-17 11:02:27 INFO  [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 702 ms
+2025-09-17 11:02:27 INFO  [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-09-17 11:02:27 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2025-09-17 11:02:27 INFO  [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/'
+2025-09-17 11:02:27 INFO  [restartedMain] c.e.A.SpringFvuAppApplication - Started SpringFvuAppApplication in 1.504 seconds (process running for 2.059)
+2025-09-17 11:03:25 INFO  [RMI TCP Connection(10)-127.0.0.1] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2025-09-17 11:03:25 INFO  [RMI TCP Connection(10)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-17 11:03:25 INFO  [tomcat-shutdown] o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8081"]
+2025-09-17 11:03:25 INFO  [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-09-17 11:03:25 INFO  [RMI TCP Connection(10)-127.0.0.1] o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8081"]
+2025-09-17 11:03:46 INFO  [restartedMain] c.e.A.SpringFvuAppApplication - Starting SpringFvuAppApplication using Java 17.0.16 with PID 22692 (C:\Users\vshrama\Spring-FVU_Utility_Original\target\classes started by vshrama in C:\Users\vshrama\Spring-FVU_Utility_Original)
+2025-09-17 11:03:46 INFO  [restartedMain] c.e.A.SpringFvuAppApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-17 11:03:46 INFO  [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-09-17 11:03:46 INFO  [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-09-17 11:03:47 INFO  [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2025-09-17 11:03:47 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2025-09-17 11:03:47 INFO  [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-17 11:03:47 INFO  [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-09-17 11:03:47 INFO  [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-09-17 11:03:47 INFO  [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1043 ms
+2025-09-17 11:03:48 INFO  [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-09-17 11:03:48 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2025-09-17 11:03:48 INFO  [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/'
+2025-09-17 11:03:48 INFO  [restartedMain] c.e.A.SpringFvuAppApplication - Started SpringFvuAppApplication in 2.171 seconds (process running for 2.605)
+2025-09-17 12:32:40 INFO  [File Watcher] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-09-17 12:32:40 INFO  [Thread-5] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-17 12:32:40 INFO  [tomcat-shutdown] o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8081"]
+2025-09-17 12:32:40 INFO  [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-09-17 12:32:40 INFO  [Thread-5] o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8081"]
+2025-09-17 12:32:40 INFO  [restartedMain] c.e.A.SpringFvuAppApplication - Starting SpringFvuAppApplication using Java 17.0.16 with PID 22692 (C:\Users\vshrama\Spring-FVU_Utility_Original\target\classes started by vshrama in C:\Users\vshrama\Spring-FVU_Utility_Original)
+2025-09-17 12:32:40 INFO  [restartedMain] c.e.A.SpringFvuAppApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-17 12:32:40 INFO  [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2025-09-17 12:32:40 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2025-09-17 12:32:40 INFO  [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-17 12:32:40 INFO  [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-09-17 12:32:40 INFO  [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-09-17 12:32:40 INFO  [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 231 ms
+2025-09-17 12:32:40 INFO  [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-09-17 12:32:40 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2025-09-17 12:32:40 INFO  [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/'
+2025-09-17 12:32:40 INFO  [restartedMain] c.e.A.SpringFvuAppApplication - Started SpringFvuAppApplication in 0.37 seconds (process running for 5334.916)
+2025-09-17 12:32:40 INFO  [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-09-17 12:35:40 INFO  [File Watcher] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-09-17 12:35:40 INFO  [Thread-7] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-17 12:35:40 INFO  [tomcat-shutdown] o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8081"]
+2025-09-17 12:35:40 INFO  [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-09-17 12:35:40 INFO  [Thread-7] o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8081"]
+2025-09-17 12:35:41 INFO  [restartedMain] c.e.A.SpringFvuAppApplication - Starting SpringFvuAppApplication using Java 17.0.16 with PID 22692 (C:\Users\vshrama\Spring-FVU_Utility_Original\target\classes started by vshrama in C:\Users\vshrama\Spring-FVU_Utility_Original)
+2025-09-17 12:35:41 INFO  [restartedMain] c.e.A.SpringFvuAppApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-17 12:35:41 INFO  [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2025-09-17 12:35:41 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2025-09-17 12:35:41 INFO  [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-17 12:35:41 INFO  [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-09-17 12:35:41 INFO  [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-09-17 12:35:41 INFO  [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 176 ms
+2025-09-17 12:35:41 INFO  [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-09-17 12:35:41 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2025-09-17 12:35:41 INFO  [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/'
+2025-09-17 12:35:41 INFO  [restartedMain] c.e.A.SpringFvuAppApplication - Started SpringFvuAppApplication in 0.276 seconds (process running for 5515.659)
+2025-09-17 12:35:41 INFO  [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-09-17 12:36:16 INFO  [main] c.e.A.SpringFvuAppApplicationTests - Starting SpringFvuAppApplicationTests using Java 17.0.16 with PID 16112 (started by vshrama in C:\Users\vshrama\Spring-FVU_Utility_Original)
+2025-09-17 12:36:16 INFO  [main] c.e.A.SpringFvuAppApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2025-09-17 12:36:18 INFO  [main] c.e.A.SpringFvuAppApplicationTests - Started SpringFvuAppApplicationTests in 1.641 seconds (process running for 2.722)
+2025-09-17 16:41:59 INFO  [main] c.e.A.SpringFvuAppApplicationTests - Starting SpringFvuAppApplicationTests using Java 17.0.16 with PID 22416 (started by vshrama in C:\Users\vshrama\Spring-FVU_Utility_Original)
+2025-09-17 16:41:59 INFO  [main] c.e.A.SpringFvuAppApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2025-09-17 16:42:01 INFO  [main] c.e.A.SpringFvuAppApplicationTests - Started SpringFvuAppApplicationTests in 1.747 seconds (process running for 2.897)
