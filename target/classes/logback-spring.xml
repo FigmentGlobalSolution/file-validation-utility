@@ -1,5 +1,7 @@
 <configuration>
 
+     <property name="LOG_DIR" value="${LOG_DIR:-/app/logs}" />
+     <property name="LOG_FILE" value="${LOG_FILE:-${LOG_DIR}/fvu-helper.log}" />>
     <!-- Console output -->
     <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
         <encoder>
@@ -9,13 +11,13 @@
 
     <!-- File output -->
     <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <file>/home/ubuntu/fvu-output/FVUMain.log</file>
+        <file>${LOG_FILE}</file>
         <encoder>
             <pattern>%d{yyyy-MM-dd HH:mm:ss} %-5level [%thread] %logger{36} - %msg%n</pattern>
         </encoder>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             <!-- Rotate daily -->
-            <fileNamePattern>logs/app.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <fileNamePattern>${LOG_DIR}/fvu-helper.%d{yyyy-MM-dd}.log</fileNamePattern>
             <maxHistory>7</maxHistory>
         </rollingPolicy>
     </appender>

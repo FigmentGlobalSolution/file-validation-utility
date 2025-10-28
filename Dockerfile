@@ -74,7 +74,7 @@ RUN which xvfb-run && xvfb-run -a echo "xvfb works"
 # /app/traces/TRACES-PDF-CONVERTERV2.1L.jar -> TRACES jar
 # /app/workdir            -> uploads + outputs live here
 WORKDIR /app
-RUN mkdir -p /app/output /app/FVU
+RUN mkdir -p /app/output /app/FVU /app/logs
 
 # Copy the jars in (replace names as needed)
 # Put the two jars in the same folder as this Dockerfile before building.
@@ -91,6 +91,7 @@ COPY TDS_STANDALONE_FVU_9.2 /app/FVU/TDS_STANDALONE_FVU_9.2
 
 ENV FVU_OUTPUT_DIR=/app/output
 ENV FVU_JAR_PATH=/app/FVU/TDS_STANDALONE_FVU_9.2/TDS_STANDALONE_FVU_9.2.jar
+ENV LOG_DIR=/app/logs
 
 # Expose app port
 EXPOSE 8081

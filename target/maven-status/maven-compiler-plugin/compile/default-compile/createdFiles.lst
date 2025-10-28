@@ -1,8 +1,11 @@
-com\example\AutomationJavaUtility\Configuration\corsConfig.class
+META-INF\MANIFEST.MF
+META-INF\maven\com.example\spring-fvu-app\pom.xml
 com\example\AutomationJavaUtility\Exception\GlobalExceptionHandler.class
-com\example\AutomationJavaUtility\Configuration\corsConfig$1.class
 com\example\AutomationJavaUtility\SpringFvuAppApplication.class
+com\example\AutomationJavaUtility\Service\FvuService.class
+com\example\AutomationJavaUtility\Configuration\corsConfig.class
+com\example\AutomationJavaUtility\Configuration\corsConfig$1.class
+META-INF\maven\com.example\spring-fvu-app\pom.properties
 com\example\AutomationJavaUtility\Utils\ZipUtils.class
 com\example\AutomationJavaUtility\Controller\FvuController.class
-com\example\AutomationJavaUtility\Service\FvuService.class
 com\example\AutomationJavaUtility\Utils\FvuJarRunner.class
