@@ -44,8 +44,10 @@ import software.amazon.awssdk.services.s3.model.ListObjectsV2Response;
 import software.amazon.awssdk.services.s3.model.PutObjectRequest;
 import software.amazon.awssdk.services.s3.model.S3Object;
 import jakarta.annotation.PostConstruct;
+//05-11-2025 modified for parent folder seperations for traces and FVU
 @Service
 public class FvuService {
+	private static final String S3_PREFIX="FVU-Utility/";
 
     private static final Logger logger = LoggerFactory.getLogger(FvuService.class);
 
@@ -138,7 +140,7 @@ public class FvuService {
             List<String> uploadedKeys = new ArrayList<>();
             if (allFiles != null) {
                 for (File file : allFiles) {
-                    String key = uniqueFolderName + "/" + file.getName();
+                    String key = S3_PREFIX+uniqueFolderName + "/" + file.getName();
                     s3Client.putObject(
                             PutObjectRequest.builder()
                                     .bucket(s3BucketName)
@@ -170,7 +172,7 @@ public class FvuService {
                         }
                     }
 
-                    String zipKey = uniqueFolderName + "/" + uniqueFolderName + ".zip";
+                    String zipKey = S3_PREFIX+uniqueFolderName + "/" + uniqueFolderName + ".zip";
                     s3Client.putObject(
                             PutObjectRequest.builder()
                                     .bucket(s3BucketName)
@@ -224,7 +226,7 @@ public class FvuService {
     public byte[] getZipBytes(String folderName) throws Exception {
         logger.info("Fetching prebuilt ZIP for folder [{}] from S3.", folderName);
 
-        String zipKey = folderName + "/" + folderName + ".zip";
+        String zipKey =S3_PREFIX+ folderName + "/" + folderName + ".zip";
 
         ResponseBytes<GetObjectResponse> objBytes = s3Client.getObjectAsBytes(
                 GetObjectRequest.builder()
@@ -243,7 +245,7 @@ public class FvuService {
         ListObjectsV2Response listRes = s3Client.listObjectsV2(
                 ListObjectsV2Request.builder()
                         .bucket(s3BucketName)
-                        .prefix(folderName + "/")
+                        .prefix(S3_PREFIX+folderName + "/")
                         .build()
         );
 
