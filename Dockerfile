@@ -42,6 +42,14 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	    libfreetype6 \
 	    && rm -rf /var/lib/apt/lists/*
 
+		# ---------- Install Temurin Java 8 (ARM compatible) ----------
+RUN apt-get update && apt-get install -y wget gnupg && \
+		    wget -qO - https://packages.adoptium.net/artifactory/api/gpg/key/public | gpg --dearmor > /usr/share/keyrings/adoptium.gpg && \
+		    echo "deb [signed-by=/usr/share/keyrings/adoptium.gpg] https://packages.adoptium.net/artifactory/deb noble main" > /etc/apt/sources.list.d/adoptium.list && \
+		    apt-get update && \
+		    apt-get install -y temurin-8-jre && \
+		    rm -rf /var/lib/apt/lists/*
+			
 	# Font aliases
 RUN mkdir -p /etc/fonts/conf.d && \
 	    cat > /etc/fonts/conf.d/60-ms-compatibility-aliases.conf <<-'EOF'
@@ -84,7 +92,7 @@ RUN mkdir -p /app/output /app/FVU /app/logs
 # Copy the jars in (replace names as needed)
 # Put the two jars in the same folder as this Dockerfile before building.
 COPY spring-fvu-app-0.0.1-SNAPSHOT.jar /app/fvu-helper.jar
-COPY TDS_STANDALONE_FVU_9.2 /app/FVU/TDS_STANDALONE_FVU_9.2
+COPY TDS_RPU_5.8 /app/FVU/TDS_RPU_5.8
 
 # ---------- Spring Boot config (override-able at runtime) ----------
 # Your application.properties already has:
@@ -95,7 +103,7 @@ COPY TDS_STANDALONE_FVU_9.2 /app/FVU/TDS_STANDALONE_FVU_9.2
 #ENV TRACES_JAR_PATH=/app/traces/TRACES-PDF-CONVERTERV2.1L.jar
 
 ENV FVU_OUTPUT_DIR=/app/output
-ENV FVU_JAR_PATH=/app/FVU/TDS_STANDALONE_FVU_9.2/TDS_STANDALONE_FVU_9.2.jar
+ENV FVU_JAR_PATH=/app/FVU/TDS_RPU_5.8/TDS_STANDALONE_FVU_9.3.jar
 ENV LOG_DIR=/app/logs
 
 # Expose app port

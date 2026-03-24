@@ -1,0 +1,42 @@
+FROM eclipse-temurin:21-jre-noble
+
+ENV DEBIAN_FRONTEND=noninteractive
+ENV TZ=Asia/Kolkata
+
+# Install runtime dependencies
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    ca-certificates \
+    fontconfig \
+    xvfb \
+    xauth \
+    x11-utils \
+    libx11-6 \
+    libxext6 \
+    libxrender1 \
+    libxtst6 \
+    libxi6 \
+    libxrandr2 \
+    libxcb1 \
+    cabextract \
+    wget \
+    && echo "ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select true" | debconf-set-selections \
+    && apt-get install -y --no-install-recommends ttf-mscorefonts-installer \
+    && rm -rf /var/lib/apt/lists/* \
+    && fc-cache -f -v
+
+WORKDIR /app
+
+RUN mkdir -p /app/output /app/FVU /app/logs
+
+COPY spring-fvu-app-0.0.1-SNAPSHOT.jar /app/fvu-helper.jar
+COPY TDS_RPU_5.8 /app/FVU/TDS_RPU_5.8
+
+ENV FVU_OUTPUT_DIR=/app/output
+ENV FVU_JAR_PATH=/app/FVU/TDS_RPU_5.8/TDS_STANDALONE_FVU_9.3.jar
+ENV LOG_DIR=/app/logs
+
+ENV JAVA_TOOL_OPTIONS="-XX:+UseContainerSupport -XX:MaxRAMPercentage=75.0 -Djava.awt.headless=false -Duser.timezone=Asia/Kolkata"
+
+EXPOSE 8081
+
+ENTRYPOINT ["java","-jar","/app/fvu-helper.jar"]

@@ -1,0 +1,31 @@
+detecting proxies
+proxy type: DIRECT
+No Proxy
+onlineservices.tin.egov-nsdl.com
+java.net.UnknownHostException: onlineservices.tin.egov-nsdl.com
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:184)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:607)
+	at sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:293)
+	at sun.security.ssl.BaseSSLSocketImpl.connect(BaseSSLSocketImpl.java:173)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:180)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:465)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:560)
+	at sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:264)
+	at sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:367)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:203)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1179)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1073)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:189)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream0(HttpURLConnection.java:1359)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1334)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getOutputStream(HttpsURLConnectionImpl.java:264)
+	at com.tin.tds.ProxyValidator.VersionVal1(ProxyValidator.java:135)
+	at com.tin.FVU.FVU.d(lb:3046)
+	at com.tin.FVU.FVU.main(lb:204)
+inside proxy validator
+the proxy validator is false
+the btnbrowseErrorFilePath is javax.swing.JButton[,0,0,0x0,invalid,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@3b22cdd0,flags=296,maximumSize=,minimumSize=,preferredSize=java.awt.Dimension[width=84,height=25],defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=14,bottom=2,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=Browse,defaultCapable=true]
+the previousSorurceFileFolder is C:\Users\vshrama\FVU FILE TESTING\FVU FILE TESTING\VALID FILE\53726623.txt
+the errorFileName is C:\Users\vshrama\Desktop\TDS_OPT\VALID\53726623.errthe hashFileName is C:\Users\vshrama\Desktop\TDS_OPT\VALID\53726623.fvuthe htmlErrorFileNameC:\Users\vshrama\Desktop\TDS_OPT\VALID\53726623err.html
